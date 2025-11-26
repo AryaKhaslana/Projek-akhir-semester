@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar */
+
+.main-navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    z-index: 50;
+    position: sticky;
+}
+
+.navbar {
+    padding-top: 60px;
+    font-family: Pixelify Sans;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.navbar a:hover {
+    color: #0067A1;
+    transition: 0.5s ease-in;
+}
+
+.main-navbar img {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+/* home */
+
+.main-home {
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    font-family: Pixelify Sans;
+    background: url(/assets/photo/Cloud\ in\ the\ sky\ with\ pixel\ art\ style\ _\ Premium\ Vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+.home {
+    padding-top: 122px;
+}
+
+
+.home h1 {
+    font-size: 50px;
+}
+
+.home h2 {
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.home h3 {
+   padding-top: 20px;
+   font-size: 20px; 
+   font-weight: 500;
+}
+
+.home h1, .home h2, .home h3 {
+    text-align: center;
+    color: white;
+
+}
+
+.home button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+}
+.home button:hover {
+    background-color: #d2a801;
+    transition: 0.5s ease-in;
+}
+
+.grid-home {
+    background-color: rgba(17, 17, 17, 0.694);
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.grid {
+    padding: 100px;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 250px;
+    height: auto;
+}
+
+.img1, .img2, .img3 {
+    padding-right: 30px;
+}
+
+/* rekomendasi game */
+
+.rekomendasi-game {
+    background-color: #0067A1;
+    font-family: poppins;
+    padding-bottom: 100px;
+}
+
+.rekomendasi-game h1 {
+    text-align: center;
+    color: white;
+}
+
+.rekomendasi1, .rekomendasi2, .rekomendasi3 {
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+
+.rekomendasi1 img, .rekomendasi2 img, .rekomendasi3 img {
+    width: 260px;
+    height: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0,10  ); 
+    border-radius: 7px;
+    transition: transform 0.4s ease;
+}
+
+.rekomendasi1 img:hover, .rekomendasi2 img:hover, .rekomendasi3 img:hover {
+    transform: scale(1.1);
+}
+
+.gridrekom {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+    gap: 300px;
+    padding-bottom: 40px;
+}
+
+
+.teksmain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 220px;
+}
+
+.teks1, .teks2, .teks3 {
+    background-color: #f8f8f8b3;
+    box-shadow: 0 3px 50px rgba(0, 0, 0,0.3);
+    border-radius: 17px;
+    padding: 20px;
+}
+
+
+.teks1 h3, .teks2 h3, .teks3 h3 {
+    max-width: 300px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.teks1 h2, .teks2 h2, .teks3 h2 {
+    padding: 20px;
+    font-weight: 800;
+}
+
+/* search */
+
+.main-search {
+    margin-top: 50px;
+    font-family: poppins;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#search-input {
+    width: 20%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: solid;
+    border-color: rgba(128, 128, 128, 0.467);
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(17, 17, 17, 0.694);
+}
+
+.api-container {
+    background-color: #1a1a1a; /* Kotak hitam background grid */
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    margin-bottom: 50px;
+    color: white;
+}
+
+#api-game {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ukuran kecil kayak di desain */
+    gap: 15px;
+}
+
+.api-card {
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+.api-card:hover { transform: scale(1.05); z-index: 10; border: 2px solid #ffcc00; }
+.api-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.api-card-title {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 5px;
+    text-align: center;
+}
+
+#loading { text-align: center; color: white; margin-top: 20px; display: none; }
+/* detail lanjut */
+/* --- MODAL OVERLAY (Layar Gelap Belakang) --- */
+.modal-overlay {
+    display: none; /* Ngumpet dulu */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Gelap transparan */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Efek blur keren */
+}
+
+/* --- KARTU DETAILNYA (Yang Biru Itu) --- */
+.modal-content {
+    background: linear-gradient(145deg, #1e3c72, #2a5298); /* Biru gradasi mewah */
+    width: 90%;
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    color: white;
+    
+    /* INI REQUESTMU: SHADOW BIAR TIMBUL */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 
+                0 0 0 1px rgba(255, 255, 255, 0.1) inset; /* Garis tipis biar tajam */
+    
+    animation: popUp 0.3s ease-out; /* Animasi muncul */
+}
+
+@keyframes popUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* --- LAYOUT KIRI KANAN --- */
+.modal-body {
+    display: flex;
+    gap: 30px;
+}
+
+/* Gambar */
+.modal-img-wrapper img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.3); /* Shadow di gambar */
+}
+
+/* Teks */
+.modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#detail-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    max-height: 150px;
+    overflow-y: auto; /* Scroll kalau kepanjangan */
+}
+
+/* Info Grid (Rilis, Dev, dll) */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tombol Close (X) */
+.close-btn {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
+}
+.close-btn:hover { color: white; }
+
+/* Tombol Website */
+.website-btn {
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    align-self: flex-start;
+    transition: transform 0.2s;
+}
+.website-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4); }
+
+/* RESPONSIF (HP) */
+@media (max-width: 768px) {
+    .modal-body { flex-direction: column; }
+    .modal-img-wrapper img { width: 100%; height: 250px; }
+    .modal-content { height: 90vh; overflow-y: scroll; }
+}
+
+
+/* footer */
+
+.pooter {
+    background-color: #1a1a1a;
+}
+
+.pooters {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}

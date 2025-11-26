@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Detail</title>
+    <link rel="stylesheet" href="/assets/style/styles.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">← Kembali ke Home</a>
+
+        <div id="loading-text">Sedang memuat data game...</div>
+
+        <div class="content-wrapper" id="content-area" style="display: none;">
+            <div class="image-section">
+                <img id="d-img" src="" alt="Game Cover">
+            </div>
+
+            <div class="info-section">
+                <h1 class="game-title" id="d-title"></h1>
+                
+                <div class="game-meta">
+                    <div class="meta-item">
+                        <strong>Rilis</strong>
+                        <span id="d-release">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Rating</strong>
+                        <span id="d-rating">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Developer</strong>
+                        <span id="d-dev">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Playtime</strong>
+                        <span id="d-playtime">-</span>
+                    </div>
+                </div>
+
+                <p class="description" id="d-desc"></p>
+
+                <a href="#" target="_blank" class="website-btn" id="d-link">Kunjungi Website</a>
+            </div>
+        </div>
+    </div>
+
+<script src="/assets/javascript/config.js"></script>
+<script src="/assets/javascript/second.js"></script>
+</body>
+</html>
