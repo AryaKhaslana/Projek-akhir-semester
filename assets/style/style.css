@@ -86,20 +86,24 @@ html {
 
 }
 
-.home button {
-    background-color: #ffcc00;
-    border: none;
+.tombol-hero {
+    display: inline-block; 
+    background-color: #ffcc00; 
+    color: rgb(252, 252, 252);
+    text-decoration: none; 
     padding: 10px 25px;
     border-radius: 20px;
     font-weight: bold;
+    border: none;
     cursor: pointer;
-    margin-top: 20px;
-    color: white;
+    transition: 0.3s;
+    margin-top: 30px;
 }
-.home button:hover {
-    background-color: #d2a801;
-    transition: 0.5s ease-in;
-}
+
+.tombol-hero:hover {
+    background-color: #ffd700;
+    transform: translateY(-3px); 
+}   
 
 .grid-home {
     background-color: rgba(17, 17, 17, 0.694);
