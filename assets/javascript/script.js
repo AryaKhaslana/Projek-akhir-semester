@@ -1,4 +1,4 @@
-    const apiKey = MY_CONFIG.apiKey;
+        const apiKey = MY_CONFIG.apiKey;
     const gridContainer = document.getElementById('api-game');
     const loadingDiv = document.getElementById('loading');
 
