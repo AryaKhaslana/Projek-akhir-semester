@@ -14,7 +14,7 @@ html {
 /* navbar */
 
 .main-navbar {
-    background-color: black;
+    background-color: rgba(2, 2, 2, 0.692);
     display: flex;
     justify-content: space-around;
     top: 0;
@@ -268,4 +268,67 @@ html {
     color: white;
     text-align: center;
     padding: 50px;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .gridrekom {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .teksmain {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .teks1, .teks2, .teks3 {
+        width: 80%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .grid-home {
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    .grid {
+        padding: 30px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .img1, .img2, .img3, .img4 {
+        width: 100px;
+        height: auto;
+        padding-right: 0;
+    }
+
+    .home h1 { font-size: 35px; }
+    .home h2 { font-size: 25px; }
+    .home h3 { font-size: 16px; padding: 0 20px; }
+
+    .navbar {
+        padding-top: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .main-navbar img {
+        width: 120px;
+    }
+
+    #search-input {
+        width: 70%;
+    }
 }

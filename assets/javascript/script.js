@@ -1,7 +1,9 @@
-        const apiKey = MY_CONFIG.apiKey;
+    // variabel awal
+    const apiKey = MY_CONFIG.apiKey;
     const gridContainer = document.getElementById('api-game');
     const loadingDiv = document.getElementById('loading');
 
+    // mencari api
     async function fetchGames(query = '') {
         let url;
         
@@ -14,6 +16,7 @@
         loadingDiv.style.display = 'block';
         gridContainer.innerHTML = '';
 
+        // menampilkan data
         try {
             const response = await fetch(url);
             const data = await response.json();
@@ -29,11 +32,13 @@
                 const card = document.createElement('div');
                 card.className = 'api-card'; 
                 
+                // menampilkan rekomendasi secara langsung tidak dari search
                 card.innerHTML = `
                     <img src="${game.background_image || 'https://via.placeholder.com/300'}" alt="${game.name}">
                     <div class="api-card-title">${game.name}</div>
                 `;
 
+                // jika card di klik maka pindah halaman
                 card.onclick = function() {
                     window.location.href = `detail.html?id=${game.id}`;
                 };
@@ -41,12 +46,14 @@
                 gridContainer.appendChild(card);
             });
 
+        // cek apakah ada error atau tidak
         } catch (error) {
             console.error(error);
             loadingDiv.innerText = "Gagal memuat data.";
         }
     }
 
+    // untuk search game yang diinginkan
     function handleSearch(event) {
         if (event.key === 'Enter') {
             const query = document.getElementById('search-input').value;
